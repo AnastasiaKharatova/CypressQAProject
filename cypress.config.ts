@@ -13,6 +13,7 @@ export default defineConfig({
       info: 'https://coding.pasv.us/course',
       test: 'Hello World!',
       demoQA: 'https://demoQA.com',
+      textBox: 'https://demoqa.com/text-box',
       expected_conditions: 'https://play1.automationcamp.ir/expected_conditions.html'  
      }
   },
