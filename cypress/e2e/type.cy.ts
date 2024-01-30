@@ -13,6 +13,7 @@ describe('Text Input',() => {
         cy.get('.form-group').within(text => {
             console.log(text.text(),'text')
             cy.get('[type="button"]').should('have.taxt',textName)
-        })
+        });
+        console.log('Hello World');
     });
 });

@@ -3,12 +3,16 @@ npm install --save-dev typescript
 npm install -- save-dev cypress 
 npx cypress open
 npm run open
+git add .
+git status
 
 env /// is enviroment
 name.cy.ts
 cy (spec)
 ts  (tipescript)
 process.env.stage //metod node
+
+
 
 
 "scripts": {
@@ -43,3 +47,4 @@ before(() => {
      .type /// dom element mean text
      cy.contains /// first is selector and after contain=text 
      .within  /// he take every comand and elemant
+     .this /// 
