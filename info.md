@@ -1,10 +1,16 @@
 npm install (install project)
 npm install --save-dev typescript
 npm install -- save-dev cypress 
+npx cypress install //
 npx cypress open
 npm run open
 git add .
 git status
+pwd //for let know in derettoria
+ls // for project
+
+:void // in function no return
+parseSpecialCharSequences:false  // for invisible password to convert in symbols
 
 env /// is enviroment
 name.cy.ts

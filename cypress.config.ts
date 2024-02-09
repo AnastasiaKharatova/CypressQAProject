@@ -2,6 +2,7 @@ import { defineConfig } from "cypress"; //479 (gzipped: 324)
 
 export default defineConfig({
   e2e: {
+    //parseSpecialCharSequences:false,
     baseUrl: "http://uitestingplayground.com",
     //baseUrl: "https://play1.automationcamp.ir",
   setupNodeEvents(on, config) {
@@ -9,13 +10,23 @@ export default defineConfig({
     },
 
      env:{
-      stage: 'https://stage.pasv.us/course',
-      info: 'https://coding.pasv.us/course',
+      stage: 'https://stage.pasv.us',
+      prod: 'https://coding.pasv.us/course/user/login',
       test: 'Hello World!',
       demoQA: 'https://demoQA.com',
       textBox: 'https://demoqa.com/text-box',
-      expected_conditions: 'https://play1.automationcamp.ir/expected_conditions.html'  
+      herokuapp: 'https://the-internet.herokuapp.com',
+      expected_conditions: 'https://play1.automationcamp.ir/expected_conditions.html',
+      email: 'kharatova1994@gmail.com',
+      password: 'A12345678v'
      }
   },
+  viewportWidth: 1200,
+  viewportHeight: 1400,
+  retries:{
+    runMode: 2,
+    openMode: 1,
+  },
+
   defaultCommandTimeout:16_000
 });

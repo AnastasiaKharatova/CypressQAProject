@@ -17,3 +17,4 @@ export const LoginPage = new Login()
 //let array = new Array();
 //new Array = []
 //new Object = {}
+LoginPage.submitButtonLogin()
