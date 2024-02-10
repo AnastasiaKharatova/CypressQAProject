@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-iframe'; //4.3k (gzipped: 1.8k)
 
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from

@@ -18,6 +18,9 @@ cy (spec)
 ts  (tipescript)
 process.env.stage //metod node
 
+{} // object
+[] // array
+() // function
 
 
 
