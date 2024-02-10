@@ -5,8 +5,8 @@ class Login {
     submitButton: string = '#submit';
 
     submitButtonLogin() {
-        cy.get(this.userName).type('test');
-        cy.get('#password').type('Test1234*');
+        cy.get(this.userName).type(process.env.EMAIL);
+        cy.get('#password').type(process.env.PASSWORD);
         cy.contains('button', 'Login').click();
         //cy.get('#login').click() //the same as contains
     }

@@ -1,4 +1,5 @@
 import { defineConfig } from "cypress"; //479 (gzipped: 324)
+require('dotenv').config()
 
 export default defineConfig({
   e2e: {
@@ -17,8 +18,8 @@ export default defineConfig({
       textBox: 'https://demoqa.com/text-box',
       herokuapp: 'https://the-internet.herokuapp.com',
       expected_conditions: 'https://play1.automationcamp.ir/expected_conditions.html',
-      email: 'kharatova1994@gmail.com',
-      password: 'A12345678v'
+      // email: 
+      // password: 
      }
   },
   viewportWidth: 1200,
