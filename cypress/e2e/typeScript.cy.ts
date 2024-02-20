@@ -30,6 +30,10 @@ const test1:any = NaN
     lastName:string,
     firstName:string
 }
+// interface stringTestType = {
+//   lastName: string,
+//   firstName: string
+// }
  function fullName(a:stringTestType,b:stringTestType):void {
     console.log('My full name is ' + a.lastName + ' ' + b.firstName);
 }

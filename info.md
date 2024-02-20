@@ -22,6 +22,8 @@ process.env.stage //metod node
 [] // array
 () // function
 
+//https://stage.pasv.us/user/login === */login
+
 
 
 "scripts": {

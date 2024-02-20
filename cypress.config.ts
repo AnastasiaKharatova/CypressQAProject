@@ -18,15 +18,16 @@ export default defineConfig({
       textBox: 'https://demoqa.com/text-box',
       herokuapp: 'https://the-internet.herokuapp.com',
       expected_conditions: 'https://play1.automationcamp.ir/expected_conditions.html',
-      // email: 
-      // password: 
+       email: 'kharatova1994@gmail.com',
+       password: 'A12345678v' 
      }
   },
   viewportWidth: 1200,
   viewportHeight: 1400,
+
   retries:{
-    runMode: 2,
-    openMode: 1,
+    runMode: 2,  // terminal run
+    openMode: 1, // cypress run
   },
 
   defaultCommandTimeout:16_000

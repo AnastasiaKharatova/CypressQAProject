@@ -1,4 +1,4 @@
-import { IFramePage } from "../pages/IFRAME"
+import { IFramePage } from "../pages/Iframe"
 import { IFrameAppPage } from "../pages/IframeApp"
 
 
