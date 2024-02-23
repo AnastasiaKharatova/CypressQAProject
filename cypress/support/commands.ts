@@ -35,6 +35,7 @@ declare global {
 //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
+       readingXlsx(file:any): any;
     }
   }
 }
@@ -42,5 +43,8 @@ Cypress.Commands.add('login', (userName:string, password:string) => {
     cy.get('#userName').type(userName);
         cy.get('#password').type(password);
         cy.contains('button', 'Login').click()
+});
+Cypress.Commands.add('readingXlsx', (file) => {
+  return cy.task('parseXlsx', {filePath: file})
 });
 
