@@ -22,6 +22,9 @@ process.env.stage //metod node
 [] // array
 () // function
 
+// function - has this
+// ()=>{} - does not have this
+
 //https://stage.pasv.us/user/login === */login
 
 
