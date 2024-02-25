@@ -2,7 +2,7 @@
 
 // describe('button', () => {
 //     beforeEach(() => {
-//         cy.visit('http://uitestingplayground.com/classattr') 
+//         cy.visit('http://uitestingplayground.com/classattr')
 //     });
 //     it('Verify page', () => {
 //        cy.title().should('eq', 'Class Attribute')

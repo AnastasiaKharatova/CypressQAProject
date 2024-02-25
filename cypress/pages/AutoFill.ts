@@ -1,6 +1,6 @@
 class AutoFill {
     private inputField: string = '.auto-complete_value-container'
-    privatendropDown: string = '#react-select-2-option-0'
+    private dropDown: string = '#react-select-2-option-0'
     private result: string = '.auto-complete__multi-value__label'
 
     autoComplete(){

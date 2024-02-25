@@ -14,14 +14,15 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-import 'cypress-iframe'; //4.3k (gzipped: 1.8k)
+import "./commands";
+import "cypress-iframe"; //4.3k (gzipped: 1.8k)
+import "cypress-mochawesome-reporter/register";
 
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    return false
-})
+Cypress.on("uncaught:exception", (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  return false;
+});
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

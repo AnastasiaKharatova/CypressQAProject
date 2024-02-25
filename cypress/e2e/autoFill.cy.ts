@@ -1,15 +1,14 @@
-import {autoFill} from '../pages/AutoFill'
+import { autoFill } from "../pages/AutoFill";
 
-describe('AUTOFILL', () => {
+describe("AUTOFILL", () => {
+  beforeEach(() => {
+    cy.visit(`${Cypress.env("demoQA")}/auto-complete`, { timeout: 5000 });
+  });
+  beforeEach(() => {
+    cy.intercept({ resourceType: /xhr|fetch/ }, { log: false });
+  });
 
-    beforeEach(() => {
-        cy.visit(`${Cypress.env('demoQA')}/auto-complete`, {timeout:5000})
-    })
-    beforeEach(() => {
-        cy.intercept({ resourceType: /xhr|fetch/}, {log: false})
-    })
-
-    it('veryfy that auto fill is working', () => {
-        autoFill.autoComplete()
-    })
-})
+  it("veryfy that auto fill is working", () => {
+    autoFill.autoComplete();
+  });
+});
