@@ -1,5 +1,5 @@
 name: Cypress Action Guide
-description: Runs Cypress tests
+
 
 on: push 
 
@@ -10,6 +10,6 @@ jobs:
          -  name: Chekout
             uses: actions/checkout@v4
          -  name: Cypress run
-            uses: cypress-io/githun-action@v6
+            uses: cypress-io/github-action@v6
             with:
                 start: npm run cypressTest
